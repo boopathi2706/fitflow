@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITFLOW - All-in-One Fitness Platform & Biometric Showcase</title>
+    <meta name="description" content="FitFlow is a React fitness platform featuring an exercise library, BMI calculator, mobile app preview, and trainer dashboard."/>
+
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+    <!-- Tailwind CDN & Config matching Stitch tokens -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f1ffef",
+              "on-background": "#e2e2e8",
+              "on-tertiary": "#3d2f00",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#1e2024",
+              "primary-fixed-dim": "#00e478",
+              "on-secondary-fixed": "#001f28",
+              "outline-variant": "#3b4b3d",
+              "on-primary-container": "#007138",
+              "tertiary": "#fffaf7",
+              "surface-card": "#161C27",
+              "on-surface-variant": "#b9cbb9",
+              "secondary-fixed-dim": "#47d6ff",
+              "text-primary": "#F8FAFC",
+              "surface": "#111318",
+              "surface-base": "#0A0C10",
+              "surface-tint": "#00e478",
+              "inverse-on-surface": "#2f3035",
+              "surface-container-highest": "#333539",
+              "error-container": "#93000a",
+              "on-primary-fixed": "#00210c",
+              "on-surface": "#e2e2e8",
+              "text-muted": "#64748B",
+              "surface-elevated": "#1E2638",
+              "accent-danger": "#FF4365",
+              "secondary": "#a5e7ff",
+              "background": "#111318",
+              "text-secondary": "#94A3B8",
+              "tertiary-fixed-dim": "#e5c364",
+              "secondary-fixed": "#b6ebff",
+              "tertiary-fixed": "#ffe08d",
+              "surface-container-low": "#1a1c20",
+              "on-secondary-fixed-variant": "#004e60",
+              "primary-fixed": "#60ff98",
+              "on-secondary-container": "#00566a",
+              "border-subtle": "rgba(255, 255, 255, 0.08)",
+              "on-tertiary-fixed": "#241a00",
+              "on-secondary": "#003543",
+              "error": "#ffb4ab",
+              "surface-variant": "#333539",
+              "on-tertiary-fixed-variant": "#584400",
+              "on-tertiary-container": "#795f01",
+              "outline": "#849585",
+              "accent-warning": "#F59E0B",
+              "primary-container": "#00ff87",
+              "surface-container-lowest": "#0c0e12",
+              "surface-bright": "#37393e",
+              "inverse-surface": "#e2e2e8",
+              "tertiary-container": "#ffdb79",
+              "on-error": "#690005",
+              "surface-dim": "#111318",
+              "surface-raised": "#12161F",
+              "on-primary-fixed-variant": "#005227",
+              "secondary-container": "#00d2ff",
+              "border-glow": "rgba(0, 255, 135, 0.35)",
+              "on-primary": "#003919",
+              "surface-container-high": "#282a2e",
+              "inverse-primary": "#006d36"
+            },
+            spacing: {
+              "space-2xl": "3rem",
+              "space-md": "1rem",
+              "margin": "1.5rem",
+              "space-xxs": "0.25rem",
+              "space-xs": "0.5rem",
+              "margin-desktop": "3rem",
+              "space-xl": "2rem",
+              "space-3xl": "4.5rem",
+              "margin-mobile": "1rem",
+              "gutter": "1.5rem",
+              "gutter-sm": "1rem",
+              "gutter-lg": "2rem",
+              "space-lg": "1.5rem",
+              "space-sm": "0.75rem"
+            },
+            fontFamily: {
+              "body-lg": ["Inter", "sans-serif"],
+              "display-hero": ["Sora", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "headline-sm": ["Sora", "sans-serif"],
+              "headline-lg": ["Sora", "sans-serif"],
+              "label-data": ["JetBrains Mono", "monospace"],
+              "metric-display": ["Sora", "sans-serif"],
+              "body-sm": ["Inter", "sans-serif"],
+              "label-caps": ["JetBrains Mono", "monospace"]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-surface-base font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary">
+    <div id="root" class="flex-1 flex flex-col"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
